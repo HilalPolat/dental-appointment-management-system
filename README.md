@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Dental Appointment Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application developed as an academic project to simplify dental appointment scheduling and management. Patients can register, sign in, book appointments, and manage their visits, while administrators can review appointments and monitor scheduling activity.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Patient experience
+- User registration and sign-in
+- Browse dental treatments and clinic information
+- Book appointments using 30-minute time slots
+- View upcoming and previous appointments
+- Cancel appointments
+- Access and manage account information
 
-### `npm start`
+### Administration
+- View appointments across patients
+- Filter appointments by date category (today, upcoming, or past)
+- Sort and manage appointment records
+- Cancel appointments
+- Review daily and monthly appointment totals and upcoming bookings
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Layer | Technologies |
+| --- | --- |
+| Frontend | React.js, JavaScript, HTML5, CSS3 |
+| Backend | Node.js, Express.js |
+| Database | PostgreSQL |
+| API communication | Axios, REST APIs |
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+clinic_randevu/
+├── public/             # Static assets
+├── src/
+│   ├── assets/         # Styles and images
+│   ├── components/     # Reusable UI components
+│   ├── data/           # Frontend data and translations
+│   ├── layout/         # Shared page layouts
+│   └── pages/          # Application pages
+├── server/             # Express backend and database connection
+├── package.json        # Frontend dependencies and scripts
+└── README.md
+```
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js and npm
+- PostgreSQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/HilalPolat/dental-appointment-management-system.git
+cd dental-appointment-management-system
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install frontend and backend dependencies separately:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+cd server
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Configure the database
 
-## Learn More
+Create a PostgreSQL database and configure the backend's environment variables in `server/.env`. The database connection uses `PGPASSWORD` for the password; check `server/db.js` for the remaining required connection settings.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Do not commit `.env` files or real credentials.** The database schema and any required seed data must be set up separately; this repository is not presented as a one-command database installation.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Run the application
 
-### Code Splitting
+Start the backend from the `server` directory using the start command defined in `server/package.json`. In another terminal, start the React frontend from the project root:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+The frontend's development configuration expects its API at `http://localhost:5000` unless the source code is updated.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+Screenshots of the application interface can be added here, including the home page, appointment booking flow, patient dashboard, and admin dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Notes
 
-### Advanced Configuration
+This repository contains an **academic/portfolio project**, not a production-ready clinic platform. In particular, the demonstration administrator login is currently checked in frontend code; frontend storage flags are not secure authorization. Before any public deployment, administrator authentication and authorization must be implemented and enforced on the server, and all credentials and configuration should be reviewed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No license has been specified for this repository.
