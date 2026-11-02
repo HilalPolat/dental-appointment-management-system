@@ -84,14 +84,9 @@ npm start
 
 The frontend's development configuration expects its API at `http://localhost:5000` unless the source code is updated.
 
-## Screenshots
-
-Screenshots of the application interface can be added here, including the home page, appointment booking flow, patient dashboard, and admin dashboard.
 
 ## Project Notes
 
 This repository contains an **academic/portfolio project**, not a production-ready clinic platform. In particular, the demonstration administrator login is currently checked in frontend code; frontend storage flags are not secure authorization. Before any public deployment, administrator authentication and authorization must be implemented and enforced on the server, and all credentials and configuration should be reviewed.
 
-## License
 
-No license has been specified for this repository.
