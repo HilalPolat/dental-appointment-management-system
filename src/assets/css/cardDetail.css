@@ -1,0 +1,166 @@
+.detail {
+  overflow: hidden;
+  font-family: montserrat_extraBold;
+  transform: translateY(600px);
+  animation: detailSlideUp 2.5s ease;
+  animation-fill-mode: forwards;
+  font-size: 200px !important;
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+}
+
+.detail_1 {
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+}
+.detail_2 {
+  font-weight: 800;
+  color: #fff;
+  font-size: 200px;
+}
+.content {
+  margin-right: 100px;
+  margin-left: 120px;
+  transform: translateY(590px);
+  opacity: 0;
+  animation: detailContent 0.7s ease, detailContentSlideUp 1s ease;
+  animation-delay: 1s, 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes detailTitleBeingVisible {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes detailSlideUp {
+  0% {
+    transform: translateY(600px) translateX(4000px);
+  }
+  50% {
+    transform: translateY(600px) translateX(0px);
+  }
+  100% {
+    transform: translateY(10px) translateX(0px);
+  }
+}
+
+@keyframes detailContent {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes detailContentSlideUp {
+  0% {
+    transform: translateY(590px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+@media /* (min-width: 940px) and */ (max-width: 1070px) {
+  .detail {
+    animation: detailSlideUp 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+  .content {
+    opacity: 0;
+    animation: detailContent 0.7s ease, detailContentSlideUp 1s ease;
+    animation-delay: 1s, 1.5s;
+    animation-fill-mode: forwards;
+  }
+}
+@media (min-width: 300px) and (max-width: 546px) {
+  .content {
+    font-size: 16px !important;
+  }
+  #detailSection {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+  .detail {
+    animation: detailSlideUp 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+  .content {
+    opacity: 0;
+    animation: detailContent 0.7s ease, detailContentSlideUp 1s ease;
+    animation-delay: 1s, 1.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (max-width: 1070px) {
+  #detailSection {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .content p {
+    font-size: 18px !important;
+  }
+  .content h2 {
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 1669px) {
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 416px) {
+  .content h2 {
+    font-size: 22px !important ;
+  }
+  .content p {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1670px) {
+    .detail_1 {
+      font-size: 150px !important;
+    }
+    .detail_2 {
+      font-size: 150px !important;
+    }
+  }
+  
+  @media (min-width: 710px) and (max-width: 1204px) {
+    .detail_1 {
+      font-size: 100px !important;
+    }
+    .detail_2 {
+      font-size: 100px !important;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .detail_1 {
+      font-size: 40px !important;
+    }
+    .detail_2 {
+      font-size: 40px !important;
+    }
+  }
+  @media (min-width: 430px) and (max-width: 710px) {
+    .detail_1 {
+      font-size: 60px !important;
+    }
+    .detail_2 {
+      font-size: 60px !important;
+    }
+  }

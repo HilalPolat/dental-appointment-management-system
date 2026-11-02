@@ -1,0 +1,570 @@
+
+.public_btn {
+  color: #fff !important;
+}
+.public_btn:hover {
+  color: #000 !important;
+}
+.contact {
+  overflow: hidden;
+  animation: contactSlideUp 2.5s ease-in-out;
+  font-family: montserrat_extraBold;
+  animation-fill-mode: forwards;
+  transform: translateY(560px);
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+  position: relative;
+  z-index: 95;
+  margin-bottom: 90px;
+}
+
+.contact_1 {
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+}
+.contact_2 {
+  font-size: 200px;
+  font-weight: 800;
+  color: #fff;
+}
+.icon_div {
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  position: relative;
+  transition: all 0.5s;
+}
+.icon_div:hover {
+  background-color: #bababa;
+  transform: rotate(225deg);
+  transition: all 0.5s;
+}
+
+.icon_div > img {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.icon_div:hover > img {
+  filter: invert(1);
+  transform: rotate(-225deg);
+}
+div > h5 {
+  color: #909090;
+}
+div > a,
+div > p {
+  color: #fff;
+}
+.contact_links {
+  margin-left: 10%;
+  margin-right: 10%;
+  /* margin-top: 100px; */
+  margin-bottom: 100px !important;
+}
+@keyframes contactTitleBeingVisible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contactSlideUp {
+  0% {
+    transform: translateY(600px) translateX(4000px);
+  }
+  50% {
+    transform: translateY(600px) translateX(0px);
+  }
+  100% {
+    transform: translateY(10px) translateX(0px);
+  }
+}
+@keyframes beInvisible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes beVisible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes beVisible_phone {
+  0% {
+    transform: translateY(-10%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10%) scale(0.5);
+    opacity: 1;
+  }
+}
+.form-top {
+  /* position: relative; */
+  /* padding: 20px; */
+  /* padding-top: 130px; */
+  color: #fff;
+  text-align: center;
+}
+
+
+
+@media (max-width: 888px) {
+  .contact_links {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .contact_links > div {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 610px) and (max-width: 888px) {
+  .contact_links {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 1204px) {
+  .form {
+    top: 60px;
+  }
+}
+
+/*form */
+
+.contact_form {
+  color: #fff;
+  animation: contactSlideUp 2.5s ease-in-out;
+  transform: translateY(560px);
+  animation-fill-mode: forwards;
+}
+@media (max-width: 1200px) {
+  .contact {
+    margin-bottom: 0px;
+  }
+}
+
+.form_top_input h3 {
+  color: #dedede;
+  font-weight: bold;
+}
+.form_top_input select {
+  margin-top: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #fff;
+  padding-left: 10px;
+}
+.form_top_input select option {
+  background-color: black;
+  color: gray;
+  border-left: none;
+  border-right: none;
+}
+.form_top_input select option:hover,
+.form_top_input select option:focus,
+.form_top_input select option:checked {
+  background-color: white;
+  color: #000;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 400px;
+  padding-top: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+.message {
+  width: 400px;
+  color: gray;
+  background-color: transparent;
+}
+input:focus {
+  color: #fff;
+}
+.form-btn:active {
+  color: #666;
+}
+.contact_link_icons h5 {
+  font-weight: bolder;
+}
+.contact_link_icons a {
+  font-weight: bold;
+}
+
+/* media */
+
+@media (min-width: 1220px) and (max-width: 1670px) {
+  .contact_1 {
+    font-size: 150px !important;
+  }
+  .contact_2 {
+    font-size: 150px !important;
+  }
+}
+
+@media (min-width: 710px) and (max-width: 1204px) {
+  .contact_1 {
+    font-size: 100px !important;
+  }
+  .contact_2 {
+    font-size: 100px !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contact_1 {
+    font-size: 40px !important;
+  }
+  .contact_2 {
+    font-size: 40px !important;
+  }
+}
+@media (min-width: 430px) and (max-width: 710px) {
+  .contact_1 {
+    font-size: 60px !important;
+  }
+  .contact_2 {
+    font-size: 60px !important;
+  }
+}
+/* media */
+
+/*form */
+
+@keyframes slideUpLetter {
+  0% {
+    transform: translateY(180%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slideDownLetter {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(120%);
+  }
+}
+@keyframes slideUpCover {
+  0% {
+    transform: translateY(360%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0%) rotate(180deg);
+  }
+}
+@keyframes slideDownCover {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(240%) rotate(0deg);
+  }
+}
+@keyframes coverOpening {
+  0% {
+    transform: translateY(0%) rotateX(180deg);
+  }
+  100% {
+    transform: translateY(0%) rotateX(0deg);
+    z-index: 90;
+  }
+}
+
+.letter_front {
+  position: absolute;
+  z-index: 100;
+  transform: translateY(180%);
+  animation: slideUpLetter 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+    slideDownLetter 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.8s,
+    beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4s;
+  animation-delay: 1.5s, 3.2s, 4.5s;
+}
+.letter_cover {
+  position: absolute;
+  z-index: 100;
+  bottom: 100%;
+  transform-origin: bottom;
+  transform: translateY(360%) rotate(180deg);
+  animation: slideUpCover 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+    coverOpening 0.7s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.3s,
+    slideDownCover 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 2.5s,
+    beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4.7s;
+  animation-delay: 1.5s, 2.5s, 3.2s, 4.5s;
+}
+
+.letter_background {
+  position: absolute;
+  z-index: 90;
+  transform: translateY(180%);
+  animation: slideUpLetter 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+    slideDownLetter 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.8s,
+    beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4s;
+  animation-delay: 1.5s, 3.2s, 4.5s;
+}
+
+@media (max-width: 531px) {
+  .form-btn {
+    font-size: 9px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .contact_links.contact_form {
+    margin-top: 380px;
+  }
+}
+
+@keyframes slideUpLetter_tablet {
+  0% {
+    transform: translateY(220%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+@keyframes slideDownLetter_tablet {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(180%);
+  }
+}
+@keyframes slideUpCover_tablet {
+  0% {
+    transform: translateY(440%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(100%) rotate(180deg);
+  }
+}
+@keyframes slideDownCover_tablet {
+  0% {
+    transform: translateY(100%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(360%) rotate(0deg);
+  }
+}
+@keyframes coverOpening_tablet {
+  0% {
+    transform: translateY(100%) rotateX(180deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: translateY(100%) rotateX(0deg);
+    transform-origin: bottom;
+    z-index: 90;
+  }
+}
+
+@media (min-width: 537px) and (max-width: 880px) {
+  .form-part-2 {
+    padding-bottom: 75px;
+  }
+  .form-top {
+    padding-top: 75px;
+  }
+  .form_top_input h3 {
+    font-size: 16px;
+  }
+  .letter_front {
+    width: 530px;
+    transform: translateY(220%);
+
+    animation: slideUpLetter_tablet 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+      slideDownLetter_tablet 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.8s,
+      beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4s;
+
+    animation-delay: 1.5s, 3.2s, 4.5s;
+  }
+  .letter_cover {
+    width: 530px;
+    transform: translateY(440%) rotate(180deg);
+
+    animation: slideUpCover_tablet 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+      coverOpening_tablet 0.7s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.3s,
+      slideDownCover_tablet 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 2.5s,
+      beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4.7s;
+
+    animation-delay: 1.5s, 2.5s, 3.2s, 4.5s;
+  }
+  .letter_background {
+    width: 530px;
+    transform: translateY(220%);
+
+    animation: slideUpLetter_tablet 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+      slideDownLetter_tablet 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.8s,
+      beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4s;
+
+    animation-delay: 1.5s, 3.2s, 4.5s;
+  }
+}
+
+@keyframes slideUpLetter_phone {
+  0% {
+    transform: translateY(350%);
+  }
+  100% {
+    transform: translateY(90%);
+  }
+}
+@keyframes slideDownLetter_phone {
+  0% {
+    transform: translateY(90%);
+  }
+  100% {
+    transform: translateY(290%);
+  }
+}
+@keyframes slideUpCover_phone {
+  0% {
+    transform: translateY(700%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(180%) rotate(180deg);
+  }
+}
+@keyframes slideDownCover_phone {
+  0% {
+    transform: translateY(180%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(580%) rotate(0deg);
+  }
+}
+@keyframes coverOpening_phone {
+  0% {
+    transform: translateY(180%) rotateX(180deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: translateY(180%) rotateX(0deg);
+    transform-origin: bottom;
+    z-index: 90;
+  }
+}
+
+@media (max-width: 537px) {
+  .form-part-2 {
+    padding-bottom: 50px;
+  }
+  .form-top {
+    padding-top: 50px;
+    padding-bottom: 10px !important;
+  }
+  .letter_front {
+    width: 350px;
+    transform: translateY(350%);
+
+    animation: slideUpLetter_phone 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+      slideDownLetter_phone 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.8s,
+      beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4s;
+
+    animation-delay: 1.5s, 3.2s, 4.5s;
+  }
+  .letter_cover {
+    width: 350px;
+    transform: translateY(700%) rotate(180deg);
+
+    animation: slideUpCover_phone 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+      coverOpening_phone 0.7s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.3s,
+      slideDownCover_phone 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 2.5s,
+      beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4.7s;
+
+    animation-delay: 1.5s, 2.5s, 3.2s, 4.5s;
+  }
+  .letter_background {
+    width: 350px;
+    transform: translateY(350%);
+
+    animation: slideUpLetter_phone 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards,
+      slideDownLetter_phone 1s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 1.8s,
+      beInvisible 0.3s cubic-bezier(0.29, 0.1, 0.29, 1) forwards 4s;
+
+    animation-delay: 1.5s, 3.2s, 4.5s;
+  }
+}
+
+.custom-select.message {
+  z-index: 10;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding: 20px 0px 0px 10px;
+  background: black;
+  color: gray;
+  user-select: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.custom-select__label.is-selected {
+  opacity: 0.95;
+}
+.custom-select__arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-select__menu {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6pxF);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  /* border-radius: 12px; */
+  border: none;
+  background: black;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.custom-select__option {
+  padding: 12px 12px;
+  /* border-radius: 8px; */
+  color: #666;
+  transition: background 0.15s ease;
+}
+
+.custom-select__option:hover {
+  background: white;
+  color: #000;
+}
+
+.custom-select__option.is-active {
+  background: white;
+  color: #000;
+}
+.department_select {
+  z-index: 20 !important;
+}
+

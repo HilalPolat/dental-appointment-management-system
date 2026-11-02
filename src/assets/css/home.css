@@ -1,0 +1,72 @@
+.home_img {
+  transition: 0.5s;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-image: url(/public/assets/img/home/home_img.png);
+}
+.button_div {
+  width: 170px !important;
+  margin-top: 570px;
+}
+
+.public_btn,
+.public_btn p {
+  color: #fff !important;
+}
+.public_btn,
+.public_btn p:hover {
+  color: #000 !important;
+}
+
+.home_title {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: montserrat_extraBold;
+  font-size: 80px !important;
+  color: transparent;
+  -webkit-text-stroke: 0.8px white;
+  position: relative;
+}
+
+.home_1 {
+  display: inline-block;
+  padding-right: 80px;
+  animation: scrollText 40s linear infinite; /* kayma süresi ve tekrar */
+  font-size: 80px !important;
+  color: transparent;
+  -webkit-text-stroke: 0.8px white;
+}
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media (min-width: 1220px) and (max-width: 1670px) {
+  .home_1 {
+    font-size: 80px !important;
+  }
+}
+@media (min-width: 710px) and (max-width: 1204px) {
+  .home_1 {
+    font-size: 50px !important;
+  }
+}
+@media (min-width: 430px) and (max-width: 710px) {
+  .home_1 {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home_1 {
+    font-size: 30px !important;
+  }
+}

@@ -1,0 +1,89 @@
+.public_btn:active {
+    color: #666;
+  }
+  .public_btn {
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #909090;
+    color: #909090;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 40px;
+  }
+  .public_btn p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  }
+  .public_btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translateX(0) scaleY(1) scaleX(0.8);
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  .public_btn:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    transform: translateX(0) scaleY(1) scaleX(0.8);
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .public_btn:hover {
+    color: black;
+    border: 1px solid #fff;
+  }
+  
+  .public_btn:hover:before {
+    left: -60%;
+    width: 130%;
+    background-color: #fff;
+    transform: translateX(0) scaleY(2) scaleX(1);
+  }
+  .public_btn:hover:after {
+    left: 60%;
+    width: 90%;
+    background-color: #fff;
+    transform: translateX(0) scaleY(2) scaleX(2);
+  }
+  @media (max-width: 531px) {
+    .public_btn {
+      /* font-size: 9px; */
+      margin-top: 25px;
+    }
+  }
+  
+  /* @media (min-width: 537px) and (max-width: 880px) {
+    .public_btn,
+    p {
+      width: 120%;
+    }
+  } */
+  /* @media (max-width: 537px)  {
+    .public_btn,
+    p {
+      width: 214px;
+    }
+  } */

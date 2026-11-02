@@ -1,0 +1,173 @@
+.admin-filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 16px 0 8px;
+  flex-wrap: wrap;
+}
+
+.admin-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.admin-filter-label {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.admin-filter-btn {
+  border-radius: 999px;
+  padding: 4px 12px;
+  border: 1px solid #444;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-filter-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.admin-filter-btn.active {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .admin-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.admin-home {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.admin-stat-card {
+  background: #181818;
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid #252525;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.admin-stat-card h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.admin-stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.admin-stat-sub {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@media (max-width: 992px) {
+  .admin-home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === ANA SAYFA GRID / LAYOUT === */
+
+.admin-home-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-home-row {
+  display: flex;
+  gap: 45px;
+  align-items: stretch;
+}
+
+.admin-summary-card,
+.admin-time-pie-card,
+.admin-age-card,
+.admin-nearest-card,
+.dashboard-home-card {
+  flex: 1;
+}
+
+.admin-summary-card h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.admin-summary-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-summary-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.admin-summary-item:last-child {
+  border-bottom: none;
+}
+
+.admin-summary-label {
+  font-size: 13px;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.admin-summary-value {
+  font-size: 22px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.admin-summary-desc {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.dashboard-home-card {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .admin-home-row {
+    flex-direction: column;
+  }
+
+  .admin-home-columns {
+    gap: 16px;
+  }
+}
+
+.upcoming-dept-patient {
+  border: 1px solid white;
+  border-radius: 999px;
+  padding: 6px 14px;
+}

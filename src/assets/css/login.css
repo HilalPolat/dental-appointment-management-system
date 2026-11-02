@@ -1,0 +1,29 @@
+#loginSection {
+  color: white;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 150px;
+  margin-top: 100px;
+  transform: translateY(600px);
+  animation: loginSlideUp 2.5s ease;
+  animation-fill-mode: forwards;
+}
+
+#loginSection h2 {
+  margin-bottom: 25px;
+}
+#loginSection p {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+@keyframes loginSlideUp {
+  0% {
+    transform: translateY(600px) translateX(4000px);
+  }
+  50% {
+    transform: translateY(600px) translateX(0px);
+  }
+  100% {
+    transform: translateY(10px) translateX(0px);
+  }
+}

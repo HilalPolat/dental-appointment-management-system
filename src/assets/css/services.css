@@ -1,0 +1,176 @@
+:root {
+  --primary: ##000 !important;
+  --bs-primary-bg-subtle: ##000 !important;
+  /* --bs-accordion-btn-focus-box-shadow: ##000 !important; */
+  --bs-primary-border-subtle: ##000 !important;
+  /* --bs-accordion-btn-focus-border-color: ##000 !important;
+  --bs-accordion-btn-focus-box-shadow: ##000 !important; */
+  --bs-body-bg: ##000 !important;
+  --bs-body-color: white !important;
+  /* --bs-accordion-btn-color: white !important;
+  --accordion-color: white !important;
+  --accordion-bg: ##000 !important;
+  --accordion-border-color: ##000 !important;
+  --accordion-border-radius: ##000 !important;
+  --accordion-inner-border-radius: ##000 !important;
+  --accordion-btn-color: ##000 !important;
+  --accordion-btn-bg: ##000 !important;
+  --accordion-btn-focus-box-shadow: ##000 !important;
+  --accordion-active-color: ##000 !important;
+  --accordion-active-bg: ##000 !important;
+  --bs-accordion-btn-icon-width: 0rem !important; */
+}
+
+#nonVisible {
+  opacity: 0;
+  /* margin-top: 16%; */
+  animation: beVisible 0.3s ease-in-out 2.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  50% {
+    /* transform: translateY(-50%); */
+    opacity: 0px;
+  }
+  75% {
+    /* transform: translateY(-20%); */
+    opacity: 0px;
+  }
+  95% {
+    /* transform: translateY(-10%); */
+    opacity: 0.4px;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1px;
+  }
+}
+
+/* services */
+
+.services {
+  overflow: hidden;
+  font-family: montserrat_extraBold;
+  transform: translateY(-600px) translateX(700px);
+  /* transform: translateX(700px); */
+  animation: services 2.5s ease;
+  animation-fill-mode: forwards;
+  font-size: 200px !important;
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+}
+/* .about {
+  font-family: montserrat_extraBold;
+  transform: translateY(600px);
+  animation: aboutTitleBeingVisible 0.5s ease, aboutSlideUp 1s ease;
+  animation-delay: 0s, 0.6s;
+  animation-fill-mode: forwards;
+  font-size: 200px !important;
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+} */
+.services_1 {
+  font-size: 200px !important;
+  /* font-weight: 800; */
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: white;
+}
+.services_2 {
+  font-weight: 800;
+  color: #fff;
+  font-size: 200px !important;
+}
+
+@keyframes services {
+  0% {
+    transform: translateY(600px) translateX(4000px);
+  }
+  50% {
+    transform: translateY(600px) translateX(0px);
+  }
+  100% {
+    transform: translateY(10px) translateX(0px);
+  }
+}
+@keyframes beVisible {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1293px) and (max-width: 1670px) {
+  .services {
+    animation: services 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+}
+.services_icon {
+  width: 55%;
+}
+@media (max-width: 600px) {
+  .services {
+    /* animation: services_3 2.5s ease; */
+    animation: services 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bottom_div {
+    order: 1;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1670px) {
+  .services_1 {
+    font-size: 150px !important;
+  }
+  .services_2 {
+    font-size: 150px !important;
+  }
+}
+
+@media (min-width: 710px) and (max-width: 1204px) {
+  .services_1 {
+    font-size: 100px !important;
+  }
+  .services_2 {
+    font-size: 100px !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .services_1 {
+    font-size: 40px !important;
+  }
+  .services_2 {
+    font-size: 40px !important;
+  }
+}
+@media (min-width: 430px) and (max-width: 710px) {
+  .services_1 {
+    font-size: 60px !important;
+  }
+  .services_2 {
+    font-size: 60px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+  .services {
+    /* animation: services_4 2.5s ease; */
+    animation: services 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+/* services */
